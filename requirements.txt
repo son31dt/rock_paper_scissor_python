@@ -1,0 +1,5 @@
+# Core dependencies
+# tkinter - comes with Python standard library (no installation needed)
+
+# Development dependencies (for building executable)
+pyinstaller>=6.0.0

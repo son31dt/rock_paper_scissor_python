@@ -242,7 +242,7 @@ class RPSGame:
     def quit_game(self):
         if messagebox.askyesno("Quit Game", 
                               f"Final Score:\nWins: {self.wins}\nLosses: {self.losses}\nTies: {self.ties}\n\nDo you want to quit?"):
-            self.root.quit()
+            self.root.destroy()
 
 def start_gui():
     root = tk.Tk()
