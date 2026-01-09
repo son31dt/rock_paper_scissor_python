@@ -86,49 +86,6 @@ Follow the text prompts to enter your choice (`rock`, `paper`, or `scissor`) or 
 - **Build Tool**: PyInstaller 6.0+
 - **Version Control**: Git
 
-## 📦 Building from Source
-
-Want to create your own executable?
-
-### Prerequisites
-
-```bash
-# Install PyInstaller
-pip install -r requirements.txt
-```
-
-### Build Instructions
-
-```bash
-# Build standalone executable with custom icon
-pyinstaller --onefile --windowed --icon=assets/icon.ico --name="RockPaperScissors" src/rock_paper_scissor.py
-```
-
-**Build Options Explained:**
-- `--onefile` - Creates a single .exe file
-- `--windowed` - No console window (GUI only)
-- `--icon=assets/icon.ico` - Uses custom icon
-- `--name="RockPaperScissors"` - Sets executable name
-
-The executable will be created in the `dist/` folder.
-
-## 📁 Project Structure
-
-```
-rock_paper_scissor_python/
-├── assets/
-│   ├── icon.ico           # Custom application icon
-│   └── demo.gif           # Demo animation
-├── src/
-│   └── rock_paper_scissor.py  # Main application code
-├── dist/                  # Built executables (after build)
-├── .gitignore            # Git ignore rules
-├── LICENSE               # MIT License
-├── README.md             # This file
-├── requirements.txt      # Python dependencies
-└── DEPLOYMENT_PLAN.md    # Deployment documentation
-```
-
 ## 🎮 Game Rules
 
 Classic Rock-Paper-Scissors rules:
@@ -136,22 +93,6 @@ Classic Rock-Paper-Scissors rules:
 - 🪨 **Rock** crushes ✂️ Scissors
 - 📄 **Paper** covers 🪨 Rock
 - ✂️ **Scissors** cuts 📄 Paper
-
-## 📸 Screenshots
-
-### Main Game Interface
-![Game Interface](assets/demo.gif)
-
-*Colorful buttons, clear score display, and instant results*
-
-## 🤝 Contributing
-
-This project is primarily for personal learning, but suggestions and feedback are welcome!
-
-If you find a bug or have a feature request:
-1. Open an issue on GitHub
-2. Describe the bug or feature in detail
-3. Include steps to reproduce (for bugs)
 
 ## 📄 License
 
